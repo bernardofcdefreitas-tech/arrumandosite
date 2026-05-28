@@ -1,0 +1,281 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MOBILE FIRST */
+/* 0px até 479px */
+
+body {
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
+        linear-gradient(180deg,
+            #007a36 0%,
+            #005c29 45%,
+            #003d1c 75%,
+            #001f0e 100%);
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* HEADER */
+
+.header-1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-paginas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* CARD */
+
+.card-produto {
+    width: 90%;
+    margin: 30px auto;
+
+    border-radius: 10px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: center;
+
+    box-shadow: 0 4px 10px rgba(17, 0, 0, 0.863);
+}
+
+/* HEADER 2 */
+
+.header-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* INFO PRODUTO */
+
+.info-produto {
+    width: 100%;
+    text-align: center;
+    color: #faf9f9;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.info-produto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* IMAGEM */
+
+.div-bone {
+    display: flex;
+
+    width: 100%;
+    height: 220px;
+
+    max-height: 300px;
+
+    padding: 15px;
+
+    background-image: url(../imagens/produtos/bonesport-preto.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* TABELA */
+
+.tabela {
+    width: 100%;
+    margin: 20px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+
+    border-collapse: collapse;
+}
+
+td {
+    font-weight: bold;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
+        linear-gradient(180deg,
+            #007a36 0%,
+            #005c29 45%,
+            #003d1c 75%,
+            #001f0e 100%);
+}
+
+/* ========================================= */
+/* TABLET */
+/* 479px até 767px */
+/* ========================================= */
+
+@media (min-width: 479px) and (max-width: 767px) {
+
+    .card-produto {
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 25px;
+
+        padding: 30px;
+    }
+
+    .info-produto {
+        text-align: center;
+        align-items: center;
+    }
+
+    .info-produto h2 {
+        font-size: 30px;
+    }
+
+    .div-bone {
+        width: 100%;
+        height: 280px;
+    }
+
+    .tabela {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    td {
+        text-align: center;
+    }
+}
+
+/* ========================================= */
+/* PC */
+/* 767px até 1920px */
+/* ========================================= */
+
+@media (min-width: 767px) and (max-width: 2510px) {
+
+    .card-produto {
+
+        width: 90%;
+        max-width: 1200px;
+
+        margin: 40px auto;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 30px;
+
+        padding: 40px;
+    }
+
+    .header-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-produto {
+
+        width: 100%;
+        max-width: 700px;
+
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-produto h2 {
+        font-size: 38px;
+    }
+
+    .info-produto p {
+        font-size: 18px;
+    }
+
+    .div-bone {
+
+        width: 100%;
+        max-width: 500px;
+
+        height: 350px;
+    }
+
+    .tabela {
+
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    td {
+        font-size: 16px;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .nav-paginas {
+        gap: 24px;
+    }
+}

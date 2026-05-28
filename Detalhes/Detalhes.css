@@ -1,0 +1,304 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
+        linear-gradient(180deg,
+            #007a36 0%,
+            #005c29 45%,
+            #003d1c 75%,
+            #001f0e 100%);
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* HEADER */
+
+.header-1 {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-paginas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* CARD */
+
+.card-produto {
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 40px auto;
+
+    border-radius: 10px;
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    box-shadow: 0 4px 10px rgba(17, 0, 0, 0.863);
+}
+
+/* HEADER 2 */
+
+.header-2 {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* INFORMAÇÕES */
+
+.info-produto {
+
+    width: 100%;
+    max-width: 500px;
+
+    color: #faf9f9;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.info-produto h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* IMAGEM */
+
+.div-bone {
+
+    display: flex;
+
+    width: 100%;
+    max-width: 350px;
+
+    height: 300px;
+
+    padding: 15px;
+
+    background-image: url(../imagens/produtos/bonesport-preto.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* TABELA */
+
+.tabela {
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px auto 25px auto;
+}
+
+table {
+
+    width: 100%;
+    max-width: 400px;
+
+    border-collapse: collapse;
+}
+
+td {
+
+    font-weight: bold;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
+        linear-gradient(180deg,
+            #007a36 0%,
+            #005c29 45%,
+            #003d1c 75%,
+            #001f0e 100%);
+}
+
+/* FOOTER */
+
+footer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 5px;
+}
+
+/* PREÇO */
+
+.preco {
+    color: #fc1004;
+    font-size: 18px;
+}
+
+.preco-antigo {
+    color: #666;
+    text-decoration: line-through;
+}
+
+/* BOTÃO */
+
+button {
+
+    padding: 14px 28px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background:
+        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
+        linear-gradient(180deg,
+            #007a36 0%,
+            #005c29 45%,
+            #003d1c 75%,
+            #001f0e 100%);
+
+    color: #f7faf8;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+
+    transform: scale(1.05);
+    background: #d9ffe6;
+    color: green;
+}
+
+/* ========================================= */
+/* TABLET */
+/* ========================================= */
+
+@media (min-width: 480px) and (max-width: 1024px) {
+
+    .card-produto {
+
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        gap: 30px;
+    }
+
+    .info-produto {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-bone {
+
+        max-width: 280px;
+        height: 260px;
+    }
+
+    .tabela {
+
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    footer {
+
+        align-items: center;
+    }
+}
+
+/* ========================================= */
+/* PC */
+/* ========================================= */
+
+@media (min-width: 1025px) {
+
+    .card-produto {
+
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 80px;
+    }
+
+    .div-bone {
+
+        max-width: 400px;
+        height: 320px;
+    }
+
+    table {
+
+        max-width: 420px;
+    }
+
+    td {
+
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .info-produto h2 {
+
+        font-size: 38px;
+    }
+
+    .info-produto p {
+
+        font-size: 18px;
+    }
+}

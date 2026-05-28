@@ -1,0 +1,342 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
+        linear-gradient(180deg,
+            #007a36 0%,
+            #005c29 45%,
+            #003d1c 75%,
+            #001f0e 100%);
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.header-1 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.conteiner {
+
+    padding: 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgb(4, 68, 15);
+}
+
+
+a {
+    color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+.nav-1 {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 16px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#main-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+.card-bone {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background:
+        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
+        linear-gradient(180deg,
+            #007a36 0%,
+            #005c29 45%,
+            #003d1c 75%,
+            #001f0e 100%);
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    border: solid 2px black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 600px;
+}
+
+.div-bone {
+    display: flex;
+    max-height: 300px;
+    padding: 15px;
+    width: 100%;
+    height: 30vh;
+    background-image: url(../imagens/produtos/bonesport-preto.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.button-bone {
+    display: flex;
+    padding: 4px;
+    border: none;
+    border-radius: 10px;
+    background:
+        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
+        linear-gradient(180deg,
+            #007a36 0%,
+            #005c29 45%,
+            #003d1c 75%,
+            #001f0e 100%);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.h2-bone {
+    display: flex;
+    padding: 10px;
+    font-size: 18px
+}
+
+.card-polo {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background:
+        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
+        linear-gradient(180deg,
+            #007a36 0%,
+            #005c29 45%,
+            #003d1c 75%,
+            #001f0e 100%);
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    border: solid 2px black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 600px;
+}
+
+.div-polo {
+   display: flex;
+    max-height: 300px;
+    padding: 15px;
+    width: 100%;
+    height: 30vh;
+    background-image: url(../imagens/produtos/pololacoste-verde.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.button-polo {
+    display: flex;
+    padding: 4px;
+    border: none;
+    border-radius: 10px;
+    background:
+        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
+        linear-gradient(180deg,
+            #007a36 0%,
+            #005c29 45%,
+            #003d1c 75%,
+            #001f0e 100%);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+    
+.h2-polo {
+    display: flex;
+    padding: 10px;
+    font-size: 18px
+}
+
+
+
+.card-chinelo {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background:
+        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
+        linear-gradient(180deg,
+            #007a36 0%,
+            #005c29 45%,
+            #003d1c 75%,
+            #001f0e 100%);
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    border: solid 2px black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 600px;
+}
+
+.div-chinelo {
+    display: flex;
+    max-height: 300px;
+    padding: 15px;
+    width: 100%;
+    height: 30vh;
+    background-image: url(../imagens/produtos/chinelo-slide.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.button-chinelo {
+    display: flex;
+    padding: 4px;
+    border: none;
+    border-radius: 10px;
+    background:
+        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
+        linear-gradient(180deg,
+            #007a36 0%,
+            #005c29 45%,
+            #003d1c 75%,
+            #001f0e 100%);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.h2-chinelo {
+    display: flex;
+    padding: 10px;
+    font-size: 18px
+}
+
+.card-agasalho {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background:
+        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
+        linear-gradient(180deg,
+            #007a36 0%,
+            #005c29 45%,
+            #003d1c 75%,
+            #001f0e 100%);
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    border: solid 2px black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 600px;
+}
+
+.div-agasalho {
+    display: flex;
+    max-height: 300px;
+    padding: 15px;
+    width: 100%;
+    height: 30vh;
+    background-image: url(../imagens/produtos/agasalho-miami-open.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.button-agasalho {
+    display: flex;
+    padding: 4px;
+    border: none;
+    border-radius: 10px;
+    background:
+        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
+        linear-gradient(180deg,
+            #007a36 0%,
+            #005c29 45%,
+            #003d1c 75%,
+            #001f0e 100%);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.h2-agasalho {
+    display: flex;
+    padding: 10px;
+    font-size: 18px
+}
+
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.a-footer{
+    color: blue;
+}
+
+
+/* TABLET - 2 cards lado a lado */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main-produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* DESKTOP - 4 cards lado a lado */
+@media (min-width:1024px) {
+    .main-produtos {
+        display: flex;
+        flex-wrap: wrap block;
+
+        grid-template-columns: repeat(4, 1fr);
+    
+    }
+    
+}

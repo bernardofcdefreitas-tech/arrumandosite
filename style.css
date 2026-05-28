@@ -1,0 +1,121 @@
+body {
+    background-color: #F5F5F5;
+    color: #1A1A1A;
+    margin: 0;
+}
+
+
+.site-header {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.titulo-lacoste {
+    font-size: 40px;
+    color: #0B8F4D;
+}
+
+
+.nav-card {
+    background-color: #DFF5E5;
+    /* verde claro */
+    border: 2px solid #0B8F4D;
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.nav-card:hover {
+    transform: scale(1.05);
+    background-color: #CFF0DA;
+}
+
+.nav-card h2 {
+    color: #0B8F4D;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+.btn-lacoste {
+    background-color: #0B8F4D;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    font-weight: bold;
+}
+
+.btn-lacoste:hover {
+    background-color: #08713d;
+    color: white;
+}
+
+
+.logo-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.logo-lacoste {
+    width: 340px;
+    height: 120px;
+    background-image: url("./imagens/logo/logo-lacosteverde.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: 0.3s;
+}
+
+.logo-lacoste:hover {
+    transform: scale(1.08);
+}
+
+
+.titulo-footer {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0B8F4D;
+    margin-bottom: 10px;
+}
+
+.site-footer {
+
+    background-color: #DFF5E5;
+    /* igual aos cards */
+    border-top: 2px solid #0B8F4D;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+}
+
+.footer-link {
+    color: #0B8F4D;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Tablet */
+
+@media (min-width: 488px) and (max-width: 767px) {
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* PC */
+
+@media (min-width: 767px) {
+    .col-md-4 {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
