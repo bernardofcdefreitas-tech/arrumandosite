@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="Cadastro.css">
     <link rel="stylesheet" href="../Global.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
@@ -14,10 +15,10 @@
 
     <div class="conteiner">
         <header class="header1">
-            <h1>cadastre-se para <br> receber 10% de  desconto </h1>
+            <h1>cadastre-se para <br> receber 10% de desconto </h1>
         </header>
 
-         <nav class="nav-1">
+        <nav class="nav-1">
             <a href="../Detalhes/Detalhes.html">Detalhes</a>
             <a href="../EsqueceuSenha/EsqueceuSenha.html">EsqueceuSenha</a>
             <a href="../Listagem/Listagem.html">Listagem</a>
@@ -29,48 +30,193 @@
 
     </div>
 
-    <div class="div-cadastro">
-        <div class="div-email">
-            <label>E-mail:</label>
-            <input type="email" placeholder="Digite Seu E-mail">
-        </div>
 
-        <div class="div-celular">
-            <label>Celular:</label>
-            <input type="number" placeholder="Digite Seu Numero">
-        </div>
+    <main class="container mt-5">
 
-        <div class="div-senha">
-            <label>Senha</label>
-            <input type="text" placeholder="Digite Sua Senha">
-        </div>
+        <section>
+            <h2 class="mb-4">Preencha seus dados</h2>
 
-        <div class="div-confirme-sua-senha">
-            <label >Confirme Sua Senha</label>
-            <input type="text" placeholder="Confirme Sua Senha" class="input-confirme-sua-senha">
-        </div>
+            <form class="row g-3 needs-validation" novalidate>
 
-        <div class="div-envie-seus-dados">
-            <button class="button-envie-seus-dados">Envie Seus Dados</button>
+                <div class="col-md-4 position-relative">
+                    <label for="validationTooltip01" class="form-label">
+                        Nome Completo
+                    </label>
 
-            
-        </div>
+                    <input type="text" class="form-control" id="validationTooltip01">
+
+                    <div class="valid-tooltip">
+                        Parece ótimo!
+                    </div>
+                </div>
+
+                <div class="col-md-4 position-relative">
+                    <label for="validationTooltip02" class="form-label">
+                        Telefone
+                    </label>
+
+                    <input type="text" class="form-control" id="validationTooltip02">
+
+                    <div class="valid-tooltip">
+                        Parece ótimo!
+                    </div>
+                </div>
+
+                <div class="col-md-4 position-relative">
+                    <label for="validationTooltipUsername" class="form-label">
+                        E-maill
+                    </label>
+
+                    <div class="input-group has-validation">
+
+                        <span class="input-group-text" id="validationTooltipUsernamePrepend">
+                            @
+                        </span>
+
+                        <input type="text" class="form-control" id="validationTooltipUsername"
+                            aria-describedby="validationTooltipUsernamePrepend" required>
+
+                        <div class="invalid-tooltip">
+                            Escolha um usuário válido e único.
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 position-relative">
+                    <label for="validationTooltip03" class="form-label">
+                        Cidade
+                    </label>
+
+                    <input type="text" class="form-control" id="validationTooltip03" required>
+
+                    <div class="invalid-tooltip">
+                        Informe uma cidade válida.
+                    </div>
+                </div>
+
+                <div class="col-md-3 position-relative">
+                    <label for="validationTooltip04" class="form-label">
+                        Estado
+                    </label>
+
+                    <select class="form-select" id="validationTooltip04" required>
+
+                        <option selected disabled value="">
+
+                        </option>
+
+                        <option>Acre (AC)</option>
+                        <option>Alagoas (AL)</option>
+                        <option>Amapá (AP)</option>
+                        <option>Amazonas (AM)</option>
+                        <option>Bahia (BA)</option>
+                        <option>Ceará (CE)</option>
+                        <option>Distrito Federal (DF)</option>
+                        <option>Espírito Santo (ES)</option>
+                        <option>Goiás (GO)</option>
+                        <option>Maranhão (MA)</option>
+                        <option>Mato Grosso (MT)</option>
+                        <option>Mato Grosso do Sul (MS)</option>
+                        <option>Minas Gerais (MG)</option>
+                        <option>Pará (PA)</option>
+                        <option>Pará (PA)</option>
+                        <option>Paraná (PR)</option>
+                        <option>Pernambuco (PE)</option>
+                        <option>Piauí (PI)</option>
+                        <option>Rio de Janeiro (RJ)</option>
+                        <option>Rio Grande do Norte (RN)</option>
+                        <option>Rio Grande do Sul (RS)</option>
+                        <option>Rondônia (RO)</option>
+                        <option>Roraima (RR)</option>
+                        <option>Santa Catarina (SC)</option>
+                        <option>São Paulo (SP)</option>
+                        <option>Sergipe (SE)</option>
+                        <option>Tocantins (TO)</option>
+
+
+                    </select>
+
+                    <div class="invalid-tooltip">
+                        Selecione um estado válido.
+                    </div>
+                </div>
+
+                <div class="col-md-3 position-relative">
+                    <label for="validationTooltip05" class="form-label">
+                        CEP
+                    </label>
+
+                    <input type="text" class="form-control" id="validationTooltip05" required>
+
+                    <div class="invalid-tooltip">
+                        Informe um CEP válido.
+                    </div>
+                </div>
+
+                <div class="col-md-3 position-relative">
+                    <label for="validationTooltip05" class="form-label">
+                        Senha
+                    </label>
+
+                    <input type="text" class="form-control" id="validationTooltip05" required>
+
+                    <div class="invalid-tooltip">
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 position-relative">
+                    <label for="validationTooltip05" class="form-label">
+                        Confirme Sua Senha
+                    </label>
+
+                    <input type="text" class="form-control" id="validationTooltip05" required>
+
+                    <div class="invalid-tooltip">
+                        confime a senha
+                    </div>
+                </div>
+
+
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">
+                        Enviar formulário
+                    </button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    </main>
+
+
+
+
 
     </div>
 
-     <div id="img-logo"></div>
+
+    <section class="logo-area">
+        <div class="logo-lacoste"></div>
+    </section>
 
 
-<footer class="footer">
+
+    <footer class="footer">
         <h2>links uteis</h2>
         <p>
             <a class="a-footer "
                 href="https://www.lacoste.com/br/lacoste/explorar/tendencia/emerging-from-summer/?utm_source=google&utm_medium=cpc&utm_campaign=[Raccoon][BR][S][Institucional]Puro&utm_content=Puro&utm_term=Emmerging_From_Summer&gad_source=1&gad_campaignid=18592045191&gbraid=0AAAAAC55wIRgpqp60xq7KUtwc4A_FBmD2&gclid=CjwKCAjw2rrQBhBuEiwAarLWHZD7PGI2X2ob_pnYi6LVXXKB1vIR4zHLP5dWoTC4S2VrRuzx1gtvWRoCuI0QAvD_BwE">
-            Lacoste</a>
+                Lacoste</a>
         </p>
         <p>feito para atividade do curso de front-end Sem fins comercias </p>
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
