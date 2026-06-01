@@ -1,5 +1,6 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +13,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HEADER */
+
 header {
     padding: 40px 0;
     text-align: center;
@@ -25,7 +26,7 @@ header h1 {
     line-height: 75px;
 }
 
-/* MENU */
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -79,7 +80,7 @@ main{
 }
 
 
-.form-control,
+
 .form-select {
     height: 55px;
     border-radius: 12px;
@@ -87,20 +88,20 @@ main{
     background-color: #f7f7f7;
 }
 
-.form-control:focus,
+.form-control,
 .form-select:focus {
     box-shadow: 0 0 10px rgba(0, 143, 76, 0.3);
     border-color: #008f4c;
 }
 
-/* LABELS */
+
 .form-label {
     font-size: 18px;
     margin-bottom: 10px;
     color: #111;
 }
 
-/* BOTÃO */
+
 .btn-primary {
 
     background-color: #0B8F4D !important;

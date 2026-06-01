@@ -6,44 +6,44 @@
 }
 
 body {
-    margin: 0;
-    min-height: 100vh;
-
-    background:
-        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
-        linear-gradient(180deg,
-            #007a36 0%,
-            #005c29 45%,
-            #003d1c 75%,
-            #001f0e 100%);
-
+    background-color: #ececec;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
 }
 
-/* HEADER */
 
-.header-1 {
-    display: flex;
-    justify-content: center;
+
+header {
+    padding: 40px 0;
+    text-align: center;
 }
 
-a {
-    color: white;
-    text-decoration: none;
+header h1 {
+    font-size: 45px;
+    color: #0B8F4D;
     font-weight: bold;
+    line-height: 75px;
 }
 
-.nav-paginas {
+nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
-    padding: 8px;
-    border-radius: 8px;
+    gap: 25px;
+    margin-top: 20px;
 }
 
-/* CARD */
+nav a {
+
+    text-decoration: none;
+    color: #0B8F4D;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #005f32;
+    transform: scale(1.05);
+}
 
 .card-produto {
 
@@ -63,24 +63,21 @@ a {
     box-shadow: 0 4px 10px rgba(17, 0, 0, 0.863);
 }
 
-/* HEADER 2 */
+
 
 .header-2 {
-
+color: #0B8F4D;
     width: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* INFORMAÇÕES */
+
 
 .info-produto {
-
     width: 100%;
     max-width: 500px;
-
     color: #faf9f9;
     font-size: 14px;
     margin-bottom: 20px;
@@ -91,75 +88,44 @@ a {
     margin-bottom: 10px;
 }
 
-/* IMAGEM */
-
 .div-bone {
 
     display: flex;
-
     width: 100%;
     max-width: 350px;
-
     height: 300px;
-
     padding: 15px;
-
     background-image: url(../imagens/produtos/bonesport-preto.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* TABELA */
-
-.tabela {
-
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin: 20px auto 25px auto;
+.minha-tabela {
+    width: 320px;
 }
 
-table {
-
-    width: 100%;
-    max-width: 400px;
-
-    border-collapse: collapse;
-}
-
-td {
-
+.minha-tabela th {
+    background: #0B8F4D !important;
+    color: #ffffff !important;
     font-weight: bold;
-    border: 1px solid #ccc;
-    padding: 8px;
-    font-size: 14px;
+    padding: 14px !important;
+    width: 40%;
+    vertical-align: middle;
+    border-right: 1px solid #f1d6d6;
+}
+
+
+
+.minha-tabela td {
+    background-color: #0B8F4D !important;
+    color: white !important;
+    font-weight: bold;
     text-align: center;
-
-    background:
-        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
-        linear-gradient(180deg,
-            #007a36 0%,
-            #005c29 45%,
-            #003d1c 75%,
-            #001f0e 100%);
+    padding: 14px !important;
+    vertical-align: middle;
 }
 
-/* FOOTER */
-
-footer {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    gap: 5px;
-}
-
-/* PREÇO */
 
 .preco {
     color: #fc1004;
@@ -171,45 +137,57 @@ footer {
     text-decoration: line-through;
 }
 
-/* BOTÃO */
 
-button {
+.btn-primary {
 
-    padding: 14px 28px;
-
+    background-color: #0B8F4D !important;
+    border-radius: 15px;
     border: none;
-
-    border-radius: 8px;
-
-    background:
-        radial-gradient(circle at top, #00a84b 0%, transparent 35%),
-        linear-gradient(180deg,
-            #007a36 0%,
-            #005c29 45%,
-            #003d1c 75%,
-            #001f0e 100%);
-
-    color: #f7faf8;
-
-    font-size: 1rem;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
+    width: 200px;
+    height: 55px;
+    font-size: 20px;
     transition: 0.3s;
 }
 
-button:hover {
 
-    transform: scale(1.05);
-    background: #d9ffe6;
-    color: green;
+.btn-primary:hover {
+    background-color: #006f3b !important;
+    transform: translateY(-3px) !important;
 }
 
-/* ========================================= */
-/* TABLET */
-/* ========================================= */
+.col-12 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+footer {
+    margin-top: 80px;
+    background-color: #dfeadf;
+    border-top: 2px solid #008f4c;
+    padding: 40px;
+    text-align: center;
+}
+
+footer h2 {
+    color: #008f4c;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #008f4c !important;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
 
 @media (min-width: 480px) and (max-width: 1024px) {
 
@@ -259,9 +237,7 @@ button:hover {
     }
 }
 
-/* ========================================= */
-/* PC */
-/* ========================================= */
+
 
 @media (min-width: 1025px) {
 
